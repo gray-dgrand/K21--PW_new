@@ -1,0 +1,18 @@
+a) git clone <url>
+- Tao 1 ban sao cua remote repository ve may local.
+- Sau khi clone, local tu dong co remote `origin` tro den url do.
+
+b) git branch <branch_name>
+- Tao nhanh moi tai commit hien tai, nhung KHONG tu dong chuyen sang nhanh do.
+
+c) git checkout <branch_name>
+- Chuyen sang nhanh da ton tai de tiep tuc lam viec.
+
+d) git checkout -b <branch_name>
+- Tao nhanh moi va chuyen sang nhanh vua tao ngay lap tuc.
+- Tuong duong: `git branch <branch_name>` + `git checkout <branch_name>`.
+
+e) git pull origin master
+- Lay thay doi moi nhat tu nhanh `master` cua remote `origin` va merge vao nhanh hien tai.
+- Thuong dung de dong bo code truoc khi tiep tuc code.
+
