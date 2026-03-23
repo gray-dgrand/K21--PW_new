@@ -1,0 +1,16 @@
+1) git commit --amend
+- Dùng để chỉnh sửa commit gần nhất (HEAD).
+- Có thể dùng để thêm file còn thiếu vào commit vừa tạo hoặc đổi commit message.
+
+2) git commit --amend -m "<message>"
+- Dùng để sửa nhanh commit message của commit gần nhất.
+- Vẫn tạo lại commit HEAD (hash mới), nên chỉ nên dùng khi commit chưa push hoặc có chủ đích rõ ràng.
+
+3) git restore --staged <file>
+- Bỏ file ra khỏi staging area.
+- File vẫn giữ thay đổi ở working directory, chỉ là không còn nằm trong commit kế tiếp.
+
+4) git reset HEAD~1
+- Lùi HEAD về commit trước đó 1 bước.
+- Thường dùng để "undo" commit gần nhất ở local (giữ lại thay đổi tùy mode reset).
+

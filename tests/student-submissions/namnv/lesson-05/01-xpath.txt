@@ -1,0 +1,26 @@
+1) XPath tuyệt đối
+a. Lấy input "Họ và tên":
+/html/body//input[@name='name']
+
+b. Lấy button "Đăng ký":
+/html/body//button[normalize-space()='Đăng ký']
+
+c. Lấy hàng đầu tiên trong tbody:
+/html/body//tbody/tr[1]
+
+2) XPath tương đối
+a. Lấy input placeholder="Số điện thoại":
+//input[@placeholder='Số điện thoại']
+
+b. Lấy email của "Trần Thị Bình" (hàng 2, cột 2):
+//table[@id='resultTable']//tbody/tr[2]/td[2]
+
+c. Lấy số điện thoại của "Lê Hoàng Cường" (hàng 3, cột 3):
+//table[@id='resultTable']//tbody/tr[3]/td[3]
+
+d. Lấy button có class="btn-register":
+//button[contains(@class,'btn-register')]
+
+e. Lấy table có id="resultTable":
+//table[@id='resultTable']
+
