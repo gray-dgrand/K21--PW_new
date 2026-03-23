@@ -1,0 +1,13 @@
+1) `git init`
+- Dùng để khởi tạo một Git repository trong thư mục hiện tại.
+- Sau khi chạy lệnh, Git tạo ra cấu trúc dữ liệu nội bộ (nhánh/metadata) để bắt đầu quản lý thay đổi.
+
+2) `git add <file-name>`
+- Dùng để đưa thay đổi của file (hoặc nhiều file) từ `working directory` vào `staging area`.
+- Sau khi `git add`, file đó đã sẵn sàng để đưa vào commit.
+
+3) `git commit -m "message"`
+- Dùng để tạo một commit mới trong `repository`.
+- Commit sẽ lấy đúng những thay đổi đang nằm trong `staging area`.
+- `-m "message"` là nội dung mô tả ngắn cho commit đó.
+

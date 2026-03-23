@@ -1,0 +1,17 @@
+Trong Git có các “vùng” (local areas) chính sau:
+
+1) `working directory`
+- Là thư mục dự án chứa các file trên máy của bạn.
+- Khi bạn sửa file, thêm file mới nhưng chưa chạy `git add`, thì thay đổi đang nằm ở working directory.
+
+2) `staging area` (còn gọi là index)
+- Là nơi Git giữ lại những thay đổi đã được bạn “đưa vào commit” bằng lệnh `git add`.
+- Việc này giúp bạn chọn chính xác phần thay đổi nào sẽ nằm trong lần commit tiếp theo.
+
+3) `repository`
+- Là nơi lưu lịch sử commit (các bản ghi đã được `git commit`).
+- Khi bạn commit, Git sẽ tạo ra một snapshot tương ứng với những gì đang có trong staging area.
+
+Tóm lại: làm việc trên `working directory`, dùng `git add` để chuyển sang `staging area`,
+sau đó dùng `git commit -m "message"` để lưu vào `repository`.
+
