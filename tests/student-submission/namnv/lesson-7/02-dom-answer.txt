@@ -1,0 +1,44 @@
+a. Cac phan tu con (child):
+<label for="email">Email:</label>
+<input type="email" id="email" name="email" required="">
+
+b. Cac phan tu cha (parent):
+<form id="registrationForm">...</form>
+
+c. Cac phan tu hau due (descendant):
+<label for="email">Email:</label>
+<input type="email" id="email" name="email" required="">
+
+d. Cac phan tu to tien (ancestor):
+<form id="registrationForm">...</form>
+
+e. Cac phan tu anh em (sibling):
+<div class="form-group" id="parent">...</div>
+<div class="form-group">...Gender...</div>
+<div class="form-group">...Hobbies...</div>
+<div class="form-group"><button type="submit">Register</button></div>
+
+f. Cac phan tu phia sau (following):
+<div class="form-group">...Gender...</div>
+<div style="width: 70%; display: flex; justify-content: space-between;">...</div>
+<input type="radio" id="male" name="gender" value="male">
+<input type="radio" id="female" name="gender" value="female">
+<div class="form-group">...Hobbies...</div>
+<input type="checkbox" id="reading" name="hobbies" value="reading">
+<input type="checkbox" id="traveling" name="hobbies" value="traveling">
+<input type="checkbox" id="cooking" name="hobbies" value="cooking">
+<div class="form-group"><button type="submit">Register</button></div>
+
+g. Cac phan tu phia truoc (preceding):
+<div class="form-group" id="parent">...</div>
+<label for="username" id="preceding">Username:</label>
+<input type="text" id="username" name="username" required="">
+
+h. Cac phan tu anh em phia sau cung cap (following-sibling):
+<div class="form-group">...Gender...</div>
+<div class="form-group">...Hobbies...</div>
+<div class="form-group"><button type="submit">Register</button></div>
+
+i. Cac phan tu anh em phia truoc cung cap (preceding-sibling):
+<div class="form-group" id="parent">...</div>
+
