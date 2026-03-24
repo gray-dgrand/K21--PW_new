@@ -1,0 +1,23 @@
+a) Giai thich cau lenh:
+
+1. git rebase main
+- Dua cac commit cua nhanh hien tai dat len tren commit moi nhat cua nhanh `main`.
+- Muc tieu: dong bo nhanh hien tai voi `main` va giu lich su commit thang, gon.
+- Neu xung dot, can resolve conflict roi `git rebase --continue`.
+
+2. git merge feature/A
+- Hop nhat thay doi tu nhanh `feature/A` vao nhanh hien tai.
+- Co the tao merge commit (three-way merge) hoac khong tao merge commit (fast-forward) tuy trang thai lich su.
+
+b) Giai thich merge strategy:
+
+1. Fast-forward merge
+- Xay ra khi nhanh dich khong co commit moi ke tu luc tach nhanh nguon.
+- Git chi can "dua con tro nhanh dich tien len" den commit moi nhat cua nhanh nguon.
+- Khong tao merge commit.
+
+2. Three-way merge
+- Xay ra khi hai nhanh deu co commit rieng (lich su da diverge).
+- Git tim common ancestor roi hop nhat 3 dau (ancestor + 2 nhanh hien tai).
+- Tao ra merge commit moi de noi 2 nhanh.
+
